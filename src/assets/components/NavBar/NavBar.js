@@ -1,5 +1,5 @@
 export function NavBar() {
   return (
-  <img src="./" alt="" />;
+  <img src="../" alt="" />;
   )
 }
