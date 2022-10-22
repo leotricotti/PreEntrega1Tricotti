@@ -7,7 +7,7 @@ export function NavBar() {
     <header className={styles.headerContainer}>
       <div className={styles.navRight}>
         <div className={styles.logoContainer}>
-            <a href="#">
+            <a href="/">
               <img src={logo} alt="Logo" className={styles.headerLogo} />
             </a>
         </div>
