@@ -1,4 +1,4 @@
-import { ReactComponent as Logo } from "../../images/logo/converse.svg";
+import logo from "../../images/logo/converse.png";
 import { MenuItems } from "./MenuItems";
 import styles from "./NavBar.module.css";
 
@@ -6,16 +6,17 @@ export function NavBar() {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.navRight}>
-        <div className="logoContainer">
-          {}
-          <Logo />
+        <div className={styles.logoContainer}>
+            <a href="#">
+              <img src={logo} alt="Logo" className={styles.headerLogo} />
+            </a>
         </div>
-        <nav className="nav-container">
+        <nav className={styles.navContainer}>
           <ul className={styles.navItem}>
             {MenuItems.map((item) => {
               return (
                 <li key={item.title}>
-                  <a href={item.url} className={item.cname}>
+                  <a href={item.url} className={styles.navLink}>
                     {item.title}
                   </a>
                 </li>
@@ -24,10 +25,10 @@ export function NavBar() {
           </ul>
         </nav>
       </div>
-      <div className="form-container">
+      <div className={styles.formContainer}>
         <form action="">
-          <div className="input-container">
-            <input type="text" placeholder="Buscar" />
+          <div className= {styles.inputContainer}>
+            <input type="text" placeholder="Buscar" className={styles.searchInput}/>
             <i className="fa-solid fa-magnifying-glass"></i>
           </div>
         </form>
