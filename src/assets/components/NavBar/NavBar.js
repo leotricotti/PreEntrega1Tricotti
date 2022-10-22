@@ -1,5 +1,3 @@
 export function NavBar() {
-  return (
-  <img src="../" alt="" />;
-  )
+  return <div>Perro</div>;
 }
