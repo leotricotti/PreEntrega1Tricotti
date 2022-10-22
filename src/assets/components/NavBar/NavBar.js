@@ -5,6 +5,9 @@ import styles from "./NavBar.module.css";
 export function NavBar() {
   return (
     <header className={styles.headerContainer}>
+      <div className={styles.navToggle}>
+        <i className="fa-solid fa-bars"></i>
+      </div>
       <div className={styles.navRight}>
         <div className={styles.logoContainer}>
             <a href="/">

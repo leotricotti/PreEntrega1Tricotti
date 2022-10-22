@@ -10,6 +10,10 @@
   box-shadow: 0 .1rem .5rem rgba(0, 0, 0, .3);
 }
 
+.navToggle {
+  display: none;
+}
+
 .navRight {
   display: flex;
   align-items: center;
@@ -66,4 +70,42 @@
   background: #000;
   font-size: .95rem;
   border: none;
+}
+
+@media (max-width: 992px) {
+  .headerContainer {
+    justify-content: space-between;
+  }
+
+  .headerLogo {
+    width: 100px;
+    height: 12.2px;
+    margin-top: .4rem;
+  }
+  
+  .navContainer {
+    display: none;
+  }
+
+  .navToggle {
+    display: block;
+  }
+
+  .navToggle i {
+    font-size: 1.5rem;
+  }
+
+  .formContainer {
+    width: 1.1rem;
+    height: 4rem;
+    background: none;
+  }
+
+  .searchInput {
+   display: none;
+  }
+
+  .inputContainer {
+    color: #000;
+  }
 }
