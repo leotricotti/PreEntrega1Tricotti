@@ -1,13 +1,14 @@
-import heroImg from "../../images/landing/hero/hero-desktop.jpg";
-import heroMovil from "../../images/landing/hero/hero-movil.jpg";
+import HeroImg from "../../images/landing/hero/hero-desktop.jpg";
+import HeroMovil from "../../images/landing/hero/hero-movil.jpg";
 import styles from "./HeroSection.module.css";
+import { HeroBtn } from "../Buttons/Buttons"
 
 export function HeroSection() {
   return (
     <section className={styles.heroContainer}>
-      <img src={heroImg} alt="influencers" className={styles.heroDesktop}/>
-      <img src={heroMovil} alt="influencers" className={styles.heroMovil}/>
-      <a href="/" className={styles.heroBtn}>ver más</a>
+      <img src={HeroImg} alt="influencers" className={styles.heroDesktop}/>
+      <img src={HeroMovil} alt="influencers" className={styles.heroMovil}/>
+      <HeroBtn />
     </section>
   );
 }

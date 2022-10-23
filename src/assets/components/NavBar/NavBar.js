@@ -1,8 +1,8 @@
 import logo from "../../images/logo/converse.png";
 import { MenuItems } from "./MenuItems";
 import styles from "./NavBar.module.css";
-import { MagnifyGlass } from "../../widgets/MagnifyGlassWidget";
-import { NavToggle } from "../../widgets/NavToggle";
+import { MagnifyGlass } from "../widgets/MagnifyGlassWidget";
+import { NavToggle } from "../widgets/NavToggle";
 
 export function NavBar() {
   return (
