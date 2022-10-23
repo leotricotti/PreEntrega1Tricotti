@@ -5,8 +5,9 @@ import styles from "./HeroSection.module.css";
 export function HeroSection() {
   return (
     <section className={styles.heroContainer}>
-      <img src={heroImg} alt="users image" className={styles.heroDesktop}/>
-      <img src={heroMovil} alt="users image" className={styles.heroMovil}/>
+      <img src={heroImg} alt="influencers" className={styles.heroDesktop}/>
+      <img src={heroMovil} alt="influencers" className={styles.heroMovil}/>
+      <a href="/" className={styles.heroBtn}>ver más</a>
     </section>
   );
 }
