@@ -1,13 +1,13 @@
 import HeroImg from "../../images/landing/hero/hero-desktop.jpg";
 import HeroMovil from "../../images/landing/hero/hero-movil.jpg";
 import styles from "./HeroSection.module.css";
-import { HeroBtn } from "../Buttons/Buttons"
+import { HeroBtn } from "../Buttons/Buttons";
 
 export function HeroSection() {
   return (
     <section className={styles.heroContainer}>
-      <img src={HeroImg} alt="influencers" className={styles.heroDesktop}/>
-      <img src={HeroMovil} alt="influencers" className={styles.heroMovil}/>
+      <img src={HeroImg} alt="influencers" className={styles.heroDesktop} />
+      <img src={HeroMovil} alt="influencers" className={styles.heroMovil} />
       <HeroBtn />
     </section>
   );

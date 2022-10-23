@@ -12,9 +12,9 @@ export function NavBar() {
       </div>
       <div className={styles.navRight}>
         <div className={styles.logoContainer}>
-            <a href="/">
-              <img src={logo} alt="Logo" className={styles.headerLogo} />
-            </a>
+          <a href="/">
+            <img src={logo} alt="Logo" className={styles.headerLogo} />
+          </a>
         </div>
         <nav className={styles.navContainer}>
           <ul className={styles.navItem}>
@@ -32,8 +32,12 @@ export function NavBar() {
       </div>
       <div className={styles.formContainer}>
         <form action="">
-          <div className= {styles.inputContainer}>
-            <input type="text" placeholder="Buscar" className={styles.searchInput}/>
+          <div className={styles.inputContainer}>
+            <input
+              type="text"
+              placeholder="Buscar"
+              className={styles.searchInput}
+            />
             <div className={styles.glassMagnify}>
               <MagnifyGlass />
             </div>
