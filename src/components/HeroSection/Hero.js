@@ -1,5 +1,5 @@
-import HeroImg from "../../images/landing/hero/hero-desktop.jpg";
-import HeroMovil from "../../images/landing/hero/hero-movil.jpg";
+import HeroImg from "../../assets/images/landing/hero/hero-desktop.jpg";
+import HeroMovil from "../../assets/images/landing/hero/hero-movil.jpg";
 import styles from "./HeroSection.module.css";
 import { HeroBtn } from "../Buttons/Buttons";
 
