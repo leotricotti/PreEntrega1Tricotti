@@ -5,10 +5,12 @@ import { HeroBtn } from "../Buttons/Buttons";
 
 export function HeroSection() {
   return (
-    <section className={styles.heroContainer}>
-      <img src={HeroImg} alt="influencers" className={styles.heroDesktop} />
-      <img src={HeroMovil} alt="influencers" className={styles.heroMovil} />
+    <div className={styles.flex}>
+      <section className={styles.heroContainer}>
+        <img src={HeroImg} alt="influencers" className={styles.heroDesktop} />
+        <img src={HeroMovil} alt="influencers" className={styles.heroMovil} />
+      </section>
       <HeroBtn />
-    </section>
+    </div>
   );
 }

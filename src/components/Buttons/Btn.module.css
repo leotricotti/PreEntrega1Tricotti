@@ -3,7 +3,6 @@
   background: #f8f9fa;
   border-color: #f8f9fa;
   position: absolute;
-  bottom: 4rem;
   padding: .75rem 1.75rem;
   z-index: 0;
   font-size: .95rem;
@@ -13,7 +12,6 @@
 
 @media (max-width: 577px) {
   .heroBtn {
-    bottom: 1rem;
     padding: .375rem .8125rem;
     font-size: .625rem;
   }
