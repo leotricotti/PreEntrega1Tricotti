@@ -1,8 +1,8 @@
-import logo from "../../assets/images/logo/converse.png";
+import logo from "../../assets/images/logo/converse.webp";
 import { MenuItems } from "./MenuItems";
 import styles from "./NavBar.module.css";
-import { MagnifyGlass } from "../widgets/MagnifyGlassWidget";
-import { NavToggle } from "../widgets/NavToggle";
+import { CartWidget } from "../Widgets/CartWidget";
+import { NavToggle } from "../Widgets/NavToggle";
 
 export function NavBar() {
   return (
@@ -30,19 +30,9 @@ export function NavBar() {
           </ul>
         </nav>
       </div>
-      <div className={styles.formContainer}>
-        <form action="">
-          <div className={styles.inputContainer}>
-            <input
-              type="text"
-              placeholder="Buscar"
-              className={styles.searchInput}
-            />
-            <div className={styles.glassMagnify}>
-              <MagnifyGlass />
-            </div>
-          </div>
-        </form>
+      <div className={styles.cart}>
+        <p>Cart</p>
+        <CartWidget />
       </div>
     </header>
   );
